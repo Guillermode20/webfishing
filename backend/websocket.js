@@ -1,5 +1,6 @@
 const WebSocket = require('ws');
 const { formatMessage, formatServerMessage } = require('./utils');
+const { generateQuestion, verifyAnswer } = require('./questions');
 
 /**
  * Handles WebSocket connections and messages.
@@ -17,14 +18,30 @@ const handleWebSocket = (ws, req, wss) => {
 
     ws.on('message', (message) => {
         try {
-            const formattedMessage = formatMessage(ip, port, message.toString());
-            console.log('Formatted message:', formattedMessage);
+            const data = JSON.parse(message);
 
-            wss.clients.forEach((client) => {
-                if (client.readyState === WebSocket.OPEN) {
-                    client.send(formattedMessage);
-                }
-            });
+            switch (data.type) {
+                case 'chat':
+                    const formattedMessage = formatMessage(ip, port, data.message);
+                    broadcastMessage(wss, formattedMessage);
+                    break;
+
+                case 'requestQuestion':
+                    const question = generateQuestion();
+                    ws.send(JSON.stringify({
+                        type: 'question',
+                        data: question
+                    }));
+                    break;
+
+                case 'submitAnswer':
+                    const isCorrect = verifyAnswer(data.answer, data.correctAnswer);
+                    ws.send(JSON.stringify({
+                        type: 'answerResult',
+                        data: { isCorrect }
+                    }));
+                    break;
+            }
         } catch (error) {
             console.error('Error processing message:', error);
         }
@@ -50,6 +67,14 @@ const broadcastServerMessage = (wss, message) => {
     wss.clients.forEach((client) => {
         if (client.readyState === WebSocket.OPEN) {
             client.send(formattedMessage);
+        }
+    });
+};
+
+const broadcastMessage = (wss, message) => {
+    wss.clients.forEach((client) => {
+        if (client.readyState === WebSocket.OPEN) {
+            client.send(JSON.stringify({ type: 'chat', message }));
         }
     });
 };
