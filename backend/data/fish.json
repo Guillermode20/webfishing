@@ -1,0 +1,504 @@
+{
+    "Rankings": [
+        {
+            "Rank": 1,
+            "FW Fish": "Mosquitofish (Ubiquitous Tiny)",
+            "SW Fish": "Mummichog (Extremely Common Estuary)"
+        },
+        {
+            "Rank": 2,
+            "FW Fish": "Guppy (Common Pet/Wild Tropics)",
+            "SW Fish": "Killifish (Common Coastal Marsh)"
+        },
+        {
+            "Rank": 3,
+            "FW Fish": "Minnow (Generic Stream Fish)",
+            "SW Fish": "Silverside (Common Schooling Bay)"
+        },
+        {
+            "Rank": 4,
+            "FW Fish": "Dace (Similar to Minnow)",
+            "SW Fish": "Sand Lance (Burrowing, Food Source)"
+        },
+        {
+            "Rank": 5,
+            "FW Fish": "Stickleback (Adaptable, Small)",
+            "SW Fish": "Anchovy (Abundant, Base Food)"
+        },
+        {
+            "Rank": 6,
+            "FW Fish": "Pumpkinseed Sunfish (Common Colorful)",
+            "SW Fish": "Sardine (Abundant Schooling)"
+        },
+        {
+            "Rank": 7,
+            "FW Fish": "Bluegill (Very Common Sunfish)",
+            "SW Fish": "Herring (Abundant, Commercial)"
+        },
+        {
+            "Rank": 8,
+            "FW Fish": "Green Sunfish (Widespread Sunfish)",
+            "SW Fish": "Sprat (Small Herring-Like)"
+        },
+        {
+            "Rank": 9,
+            "FW Fish": "Creek Chub (Common Baitfish)",
+            "SW Fish": "Smelt (Inshore Spawning)"
+        },
+        {
+            "Rank": 10,
+            "FW Fish": "Golden Shiner (Popular Baitfish)",
+            "SW Fish": "Pinfish (Common Nuisance)"
+        },
+        {
+            "Rank": 11,
+            "FW Fish": "Yellow Perch (Common Panfish)",
+            "SW Fish": "Spot (Common Inshore)"
+        },
+        {
+            "Rank": 12,
+            "FW Fish": "Black Crappie (Popular Panfish)",
+            "SW Fish": "Croaker (Sound-Producing)"
+        },
+        {
+            "Rank": 13,
+            "FW Fish": "White Crappie (Similar Panfish)",
+            "SW Fish": "Flounder (Camouflaged Flatfish)"
+        },
+        {
+            "Rank": 14,
+            "FW Fish": "Brown Bullhead Catfish (Common Pond)",
+            "SW Fish": "Summer Flounder (Popular Fishing)"
+        },
+        {
+            "Rank": 15,
+            "FW Fish": "Channel Catfish (Popular Fishing)",
+            "SW Fish": "Winter Flounder (Colder Waters)"
+        },
+        {
+            "Rank": 16,
+            "FW Fish": "Rainbow Trout (Stocked)",
+            "SW Fish": "Black Sea Bass (Common Inshore)"
+        },
+        {
+            "Rank": 17,
+            "FW Fish": "Brown Trout (Wild, Cold Streams)",
+            "SW Fish": "Tautog/Blackfish (Rocky Areas, Tricky)"
+        },
+        {
+            "Rank": 18,
+            "FW Fish": "Brook Trout (Native, Pristine)",
+            "SW Fish": "Scup/Porgy (Schooling Bottom Fish)"
+        },
+        {
+            "Rank": 19,
+            "FW Fish": "Lake Trout (Deep, Cold Lakes)",
+            "SW Fish": "Weakfish (Elusive Sportfish)"
+        },
+        {
+            "Rank": 20,
+            "FW Fish": "Smallmouth Bass (Rocky Rivers)",
+            "SW Fish": "Striped Bass (Iconic Migratory)"
+        },
+        {
+            "Rank": 21,
+            "FW Fish": "Largemouth Bass (Vegetated Lakes)",
+            "SW Fish": "Bluefish (Aggressive Schooling)"
+        },
+        {
+            "Rank": 22,
+            "FW Fish": "Walleye (Deep Lakes, Sportfish)",
+            "SW Fish": "Spanish Mackerel (Fast Schooling)"
+        },
+        {
+            "Rank": 23,
+            "FW Fish": "Northern Pike (Predatory Ambush)",
+            "SW Fish": "King Mackerel (Larger, Powerful)"
+        },
+        {
+            "Rank": 24,
+            "FW Fish": "Muskellunge/Muskie (Large, Elusive)",
+            "SW Fish": "Cobia (Solitary, Structure)"
+        },
+        {
+            "Rank": 25,
+            "FW Fish": "Sauger (Similar to Walleye)",
+            "SW Fish": "Red Drum/Redfish (Coastal Sport)"
+        },
+        {
+            "Rank": 26,
+            "FW Fish": "White Perch (Brackish/Fresh)",
+            "SW Fish": "Black Drum (Large, Inshore)"
+        },
+        {
+            "Rank": 27,
+            "FW Fish": "Yellow Bullhead Catfish (Widespread)",
+            "SW Fish": "Sheepshead (Human-like Teeth)"
+        },
+        {
+            "Rank": 28,
+            "FW Fish": "Flathead Catfish (Large River Predator)",
+            "SW Fish": "Pompano (Fast, Prized)"
+        },
+        {
+            "Rank": 29,
+            "FW Fish": "Bowfin/Dogfish (Ancient, Slow Rivers)",
+            "SW Fish": "Permit (Similar, Larger, Flats)"
+        },
+        {
+            "Rank": 30,
+            "FW Fish": "Longnose Gar (Ancient, Long Snout)",
+            "SW Fish": "Tarpon (Large, Acrobatic)"
+        },
+        {
+            "Rank": 31,
+            "FW Fish": "Shortnose Gar (Smaller Gar)",
+            "SW Fish": "Bonefish (Elusive, Fast Flats)"
+        },
+        {
+            "Rank": 32,
+            "FW Fish": "Spotted Gar (Spotted)",
+            "SW Fish": "Snook (Ambush Predator)"
+        },
+        {
+            "Rank": 33,
+            "FW Fish": "Alligator Gar (Giant North America)",
+            "SW Fish": "Grouper (Bottom Dwelling, Prized)"
+        },
+        {
+            "Rank": 34,
+            "FW Fish": "Paddlefish (Filter, Declining)",
+            "SW Fish": "Snapper (Reef Fish, Overfished)"
+        },
+        {
+            "Rank": 35,
+            "FW Fish": "Lake Sturgeon (Ancient, Vulnerable)",
+            "SW Fish": "Cero Mackerel (Warm Water Sport)"
+        },
+        {
+            "Rank": 36,
+            "FW Fish": "Shovelnose Sturgeon (Smaller, Vulnerable)",
+            "SW Fish": "Wahoo (Extremely Fast)"
+        },
+        {
+            "Rank": 37,
+            "FW Fish": "White Sturgeon (Large, Pacific)",
+            "SW Fish": "Dolphin Fish/Mahi-Mahi (Fast Growing)"
+        },
+        {
+            "Rank": 38,
+            "FW Fish": "Colorado Pikeminnow (Endangered)",
+            "SW Fish": "Sailfish (Fast, Billfish)"
+        },
+        {
+            "Rank": 39,
+            "FW Fish": "Nile Perch (Invasive, Impactful)",
+            "SW Fish": "Marlin (Billfish, Threatened)"
+        },
+        {
+            "Rank": 40,
+            "FW Fish": "Tigerfish (Ferocious African)",
+            "SW Fish": "Swordfish (Deep-Sea, Population Concern)"
+        },
+        {
+            "Rank": 41,
+            "FW Fish": "Arapaima (Giant South American)",
+            "SW Fish": "Yellowfin Tuna (Large, Commercial)"
+        },
+        {
+            "Rank": 42,
+            "FW Fish": "Giant Mekong Catfish (Critically Endangered)",
+            "SW Fish": "Bigeye Tuna (Deep-Diving, Overfished)"
+        },
+        {
+            "Rank": 43,
+            "FW Fish": "Goodeids (Endangered Livebearers)",
+            "SW Fish": "Skipjack Tuna (Abundant Tuna)"
+        },
+        {
+            "Rank": 44,
+            "FW Fish": "Cavefish (Specialized, Rare)",
+            "SW Fish": "Dogtooth Tuna (Large Indo-Pacific)"
+        },
+        {
+            "Rank": 45,
+            "FW Fish": "Golden Dorado (Threatened Sportfish)",
+            "SW Fish": "Bluefin Tuna (Critically Endangered)"
+        },
+        {
+            "Rank": 46,
+            "FW Fish": "Payara/Vampire Fish (Large Fangs)",
+            "SW Fish": "Great Barracuda (Fast, Ambush Predator)"
+        },
+        {
+            "Rank": 47,
+            "FW Fish": "Taimen/Huchen (Giant Salmonid)",
+            "SW Fish": "Giant Trevally/GT (Powerful Reef Predator)"
+        },
+        {
+            "Rank": 48,
+            "FW Fish": "Mahseer (Threatened Sportfish)",
+            "SW Fish": "Amberjack (Strong, Fast-Growing)"
+        },
+        {
+            "Rank": 49,
+            "FW Fish": "Beluga Sturgeon (Largest, Critically Endangered)",
+            "SW Fish": "Mola Mola/Ocean Sunfish (Bizarre, Surface)"
+        },
+        {
+            "Rank": 50,
+            "FW Fish": "Chinese Paddlefish (Possibly Extinct)",
+            "SW Fish": "Thresher Shark (Long Tail)"
+        },
+        {
+            "Rank": 51,
+            "FW Fish": "Arowana (Prized Ornamental, Wild Threat)",
+            "SW Fish": "Mako Shark (Fastest, Jumps)"
+        },
+        {
+            "Rank": 52,
+            "FW Fish": "Bichir (Ancient, Prehistoric)",
+            "SW Fish": "Hammerhead Shark (Distinctive Head)"
+        },
+        {
+            "Rank": 53,
+            "FW Fish": "Lungfish (Air Breathing, Unique)",
+            "SW Fish": "Tiger Shark (Generalist Predator)"
+        },
+        {
+            "Rank": 54,
+            "FW Fish": "Blind Cave Eel (Cave Adapted, Rare)",
+            "SW Fish": "Great White Shark (Apex, Rare)"
+        },
+        {
+            "Rank": 55,
+            "FW Fish": "Devil's Hole Pupfish (Critically Endangered)",
+            "SW Fish": "Whale Shark (Largest, Filter)"
+        },
+        {
+            "Rank": 56,
+            "FW Fish": "Giant Freshwater Stingray (Large, Threatened)",
+            "SW Fish": "Basking Shark (Filter, Surface)"
+        },
+        {
+            "Rank": 57,
+            "FW Fish": "African Lungfish (Out of Water Adapt)",
+            "SW Fish": "Sawfish (Toothed Rostrum, Critically Endangered)"
+        },
+        {
+            "Rank": 58,
+            "FW Fish": "South American Lungfish (Unique Adapt)",
+            "SW Fish": "Angelshark (Flat, Buried)"
+        },
+        {
+            "Rank": 59,
+            "FW Fish": "Australian Lungfish (Living Fossil)",
+            "SW Fish": "Porbeagle Shark (Cold Water, Mistaken)"
+        },
+        {
+            "Rank": 60,
+            "FW Fish": "Platinum Arowana (Rare Color Morph)",
+            "SW Fish": "Megamouth Shark (Rare Filter, Deep Sea)"
+        },
+        {
+            "Rank": 61,
+            "FW Fish": "Albino Cavefish (Pigmentless)",
+            "SW Fish": "Frilled Shark (Ancient, Deep-Sea)"
+        },
+        {
+            "Rank": 62,
+            "FW Fish": "Giant Gourami (Wild Threatened)",
+            "SW Fish": "Goblin Shark (Protrusible Jaw)"
+        },
+        {
+            "Rank": 63,
+            "FW Fish": "Platinum Gar (Rare Color Morph)",
+            "SW Fish": "Coelacanth (Living Fossil)"
+        },
+        {
+            "Rank": 64,
+            "FW Fish": "Iridescent Shark Catfish (Giant, Declining)",
+            "SW Fish": "Oarfish (Long, Ribbon-like)"
+        },
+        {
+            "Rank": 65,
+            "FW Fish": "Electric Eel (Powerful Discharge)",
+            "SW Fish": "Gulper/Pelican Eel (Huge Mouth)"
+        },
+        {
+            "Rank": 66,
+            "FW Fish": "Giant Snakehead (Aggressive, Wild)",
+            "SW Fish": "Anglerfish (Deep-Sea Lure)"
+        },
+        {
+            "Rank": 67,
+            "FW Fish": "Redtail Catfish (Wild Threatened)",
+            "SW Fish": "Viperfish (Large Teeth, Bioluminescent)"
+        },
+        {
+            "Rank": 68,
+            "FW Fish": "Piraiba Catfish (Giant Amazon)",
+            "SW Fish": "Dragonfish (Deep-Sea Bioluminescence)"
+        },
+        {
+            "Rank": 69,
+            "FW Fish": "Goonch Catfish (Mythical Man-Eater)",
+            "SW Fish": "Fangtooth Fish (Large Teeth)"
+        },
+        {
+            "Rank": 70,
+            "FW Fish": "Sterlet Sturgeon (Albino, Rare)",
+            "SW Fish": "Sarcastic Fringehead (Large Mouth, Territorial)"
+        },
+        {
+            "Rank": 71,
+            "FW Fish": "Giant Freshwater Sawfish (Critically Endangered)",
+            "SW Fish": "Coffinfish (Deep-Sea Angler)"
+        },
+        {
+            "Rank": 72,
+            "FW Fish": "Beluga Hybrid Sturgeon (Rare, Artificial)",
+            "SW Fish": "Footballfish (Deep-Sea, Bioluminescent)"
+        },
+        {
+            "Rank": 73,
+            "FW Fish": "Platinum Alligator Gar (Extremely Rare)",
+            "SW Fish": "Hagfish (Primitive, Slime)"
+        },
+        {
+            "Rank": 74,
+            "FW Fish": "Leopard Catfish (Striking Pattern)",
+            "SW Fish": "Lanternfish (Deep-Sea Bioluminescent)"
+        },
+        {
+            "Rank": 75,
+            "FW Fish": "Tiger Shovelnose Catfish (Striking, Giant)",
+            "SW Fish": "Chimaera/Ghost Shark (Deep-Sea, Strange)"
+        },
+        {
+            "Rank": 76,
+            "FW Fish": "Black Arowana (Wild Threatened)",
+            "SW Fish": "Gulper Shark (Deep Sea, Large Mouth)"
+        },
+        {
+            "Rank": 77,
+            "FW Fish": "Albino Arapaima (Rare Morph)",
+            "SW Fish": "Sixgill Shark (Ancient, Deep)"
+        },
+        {
+            "Rank": 78,
+            "FW Fish": "Platinum Bichir (Rare Morph)",
+            "SW Fish": "Seven-gill Shark (Ancient, Deep/Coastal)"
+        },
+        {
+            "Rank": 79,
+            "FW Fish": "Super Red Arowana (Highly Selective)",
+            "SW Fish": "Frilled-necked Dogfish (Deep-Sea Frills)"
+        },
+        {
+            "Rank": 80,
+            "FW Fish": "Albino Lungfish (Exceptionally Rare)",
+            "SW Fish": "Velvet Belly Lanternshark (Bioluminescent)"
+        },
+        {
+            "Rank": 81,
+            "FW Fish": "Giant Amazonian Pirarucu (Exceptional Specimen)",
+            "SW Fish": "Cookiecutter Shark (Cookie-Bites)"
+        },
+        {
+            "Rank": 82,
+            "FW Fish": "Platinum Paddlefish (Hypothetical Rare)",
+            "SW Fish": "Greenland Shark (Arctic, Long-Lived)"
+        },
+        {
+            "Rank": 83,
+            "FW Fish": "Albino Goonch Catfish (Hypothetical)",
+            "SW Fish": "Portuguese Dogfish (Deep-Sea)"
+        },
+        {
+            "Rank": 84,
+            "FW Fish": "Fossil Fish (Rediscovered Ancient Species)",
+            "SW Fish": "Sleeper Shark (Slow, Deep-Sea)"
+        },
+        {
+            "Rank": 85,
+            "FW Fish": "Dragon Fish (Mythical Serpent)",
+            "SW Fish": "Megamouth Shark (Exceptional Specimen)"
+        },
+        {
+            "Rank": 86,
+            "FW Fish": "Lake Monster (Regional Folklore)",
+            "SW Fish": "Rhinochimaera (Longnose Chimaera)"
+        },
+        {
+            "Rank": 87,
+            "FW Fish": "Albino Dragon Fish (Mythical & Rare)",
+            "SW Fish": "Goblin Shark (Mature Adult)"
+        },
+        {
+            "Rank": 88,
+            "FW Fish": "Diamond Sturgeon (Fictional Morph)",
+            "SW Fish": "Pelican Eel (Giant Specimen)"
+        },
+        {
+            "Rank": 89,
+            "FW Fish": "Shadow Carp (Fictional Invisible)",
+            "SW Fish": "Humpback Blackdevil (Deep Sea Anglerfish)"
+        },
+        {
+            "Rank": 90,
+            "FW Fish": "Rainbow Serpent (Aboriginal Spirit)",
+            "SW Fish": "Netdevil (Bioluminescent Net Anglerfish)"
+        },
+        {
+            "Rank": 91,
+            "FW Fish": "Ancient One (Prehistoric Relict)",
+            "SW Fish": "Telescopefish (Huge Eyes)"
+        },
+        {
+            "Rank": 92,
+            "FW Fish": "Crystal Catfish (Fictional Transparent)",
+            "SW Fish": "Atlantic Footballfish (Female with Parasitic Male)"
+        },
+        {
+            "Rank": 93,
+            "FW Fish": "Living Ammonite Fish (Impossible Hybrid)",
+            "SW Fish": "Krasnoyarsk Angler (Largest Anglerfish)"
+        },
+        {
+            "Rank": 94,
+            "FW Fish": "Time Traveler Trout (Sci-Fi)",
+            "SW Fish": "Dreamer Anglerfish (Iconic Deep-Sea)"
+        },
+        {
+            "Rank": 95,
+            "FW Fish": "Sunken Temple Catfish (Lore-Based)",
+            "SW Fish": "Bathypelagic Dragonfish (Deep, Rare)"
+        },
+        {
+            "Rank": 96,
+            "FW Fish": "Heart of the Mountain Sturgeon (Magical)",
+            "SW Fish": "Luminous Anglerfish (Tiny Parasitic Male)"
+        },
+        {
+            "Rank": 97,
+            "FW Fish": "Guardian of the Waterfall (Mythical)",
+            "SW Fish": "Giant Ostracod (Misleading Fish-Like)"
+        },
+        {
+            "Rank": 98,
+            "FW Fish": "Spirit of the River (Abstract Entity)",
+            "SW Fish": "Giant Squid (Legendary)"
+        },
+        {
+            "Rank": 99,
+            "FW Fish": "The Leviathan of the Lake (Mythological)",
+            "SW Fish": "Colossal Squid (Deep-Sea Apex)"
+        },
+        {
+            "Rank": 100,
+            "FW Fish": "The Great Old One (Cosmic Horror)",
+            "SW Fish": "Kraken (Ultimate Mythical Monster)"
+        }
+    ]
+}

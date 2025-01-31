@@ -1,0 +1,244 @@
+{
+    "fish": [
+        {
+            "id": "fw-001",
+            "name": "Mosquitofish",
+            "species": "Gambusia affinis",
+            "rank": 1,
+            "weight_range": {
+                "min": 0.002,
+                "max": 0.005
+            },
+            "region": "Freshwater",
+            "time": "Any"
+        },
+        {
+            "id": "sw-001",
+            "name": "Mummichog",
+            "species": "Fundulus heteroclitus",
+            "rank": 1,
+            "weight_range": {
+                "min": 0.01,
+                "max": 0.03
+            },
+            "region": "Estuary",
+            "time": "Any"
+        },
+        {
+            "id": "fw-002",
+            "name": "Guppy",
+            "species": "Poecilia reticulata",
+            "rank": 2,
+            "weight_range": {
+                "min": 0.003,
+                "max": 0.008
+            },
+            "region": "Freshwater",
+            "time": "Any"
+        },
+        {
+            "id": "sw-002",
+            "name": "Killifish",
+            "species": "Fundulus diaphanus",
+            "rank": 2,
+            "weight_range": {
+                "min": 0.01,
+                "max": 0.05
+            },
+            "region": "Coastal Marsh",
+            "time": "Any"
+        },
+        {
+            "id": "fw-003",
+            "name": "Minnow",
+            "species": "Phoxinus phoxinus",
+            "rank": 3,
+            "weight_range": {
+                "min": 0.01,
+                "max": 0.04
+            },
+            "region": "Freshwater",
+            "time": "Any"
+        },
+        {
+            "id": "sw-003",
+            "name": "Silverside",
+            "species": "Menidia menidia",
+            "rank": 3,
+            "weight_range": {
+                "min": 0.02,
+                "max": 0.06
+            },
+            "region": "Bay",
+            "time": "Any"
+        },
+        {
+            "id": "fw-004",
+            "name": "Dace",
+            "species": "Leuciscus leuciscus",
+            "rank": 4,
+            "weight_range": {
+                "min": 0.02,
+                "max": 0.05
+            },
+            "region": "Freshwater",
+            "time": "Any"
+        },
+        {
+            "id": "sw-004",
+            "name": "Sand Lance",
+            "species": "Ammodytes americanus",
+            "rank": 4,
+            "weight_range": {
+                "min": 0.03,
+                "max": 0.08
+            },
+            "region": "Coastal",
+            "time": "Any"
+        },
+        {
+            "id": "fw-005",
+            "name": "Stickleback",
+            "species": "Gasterosteus aculeatus",
+            "rank": 5,
+            "weight_range": {
+                "min": 0.005,
+                "max": 0.02
+            },
+            "region": "Freshwater",
+            "time": "Any"
+        },
+        {
+            "id": "sw-005",
+            "name": "Anchovy",
+            "species": "Engraulis encrasicolus",
+            "rank": 5,
+            "weight_range": {
+                "min": 0.02,
+                "max": 0.07
+            },
+            "region": "Coastal",
+            "time": "Any"
+        },
+        {
+            "id": "fw-006",
+            "name": "Pumpkinseed Sunfish",
+            "species": "Lepomis gibbosus",
+            "rank": 6,
+            "weight_range": {
+                "min": 0.05,
+                "max": 0.15
+            },
+            "region": "Freshwater",
+            "time": "Day"
+        },
+        {
+            "id": "sw-006",
+            "name": "Sardine",
+            "species": "Sardina pilchardus",
+            "rank": 6,
+            "weight_range": {
+                "min": 0.03,
+                "max": 0.1
+            },
+            "region": "Coastal",
+            "time": "Day"
+        },
+        {
+            "id": "fw-007",
+            "name": "Bluegill",
+            "species": "Lepomis macrochirus",
+            "rank": 7,
+            "weight_range": {
+                "min": 0.08,
+                "max": 0.2
+            },
+            "region": "Freshwater",
+            "time": "Day"
+        },
+        {
+            "id": "sw-007",
+            "name": "Herring",
+            "species": "Clupea harengus",
+            "rank": 7,
+            "weight_range": {
+                "min": 0.05,
+                "max": 0.2
+            },
+            "region": "Coastal",
+            "time": "Day"
+        },
+        {
+            "id": "fw-008",
+            "name": "Green Sunfish",
+            "species": "Lepomis cyanellus",
+            "rank": 8,
+            "weight_range": {
+                "min": 0.07,
+                "max": 0.25
+            },
+            "region": "Freshwater",
+            "time": "Day"
+        },
+        {
+            "id": "sw-008",
+            "name": "Sprat",
+            "species": "Sprattus sprattus",
+            "rank": 8,
+            "weight_range": {
+                "min": 0.04,
+                "max": 0.15
+            },
+            "region": "Coastal",
+            "time": "Day"
+        },
+        {
+            "id": "fw-009",
+            "name": "Creek Chub",
+            "species": "Semotilus atromaculatus",
+            "rank": 9,
+            "weight_range": {
+                "min": 0.1,
+                "max": 0.3
+            },
+            "region": "Freshwater",
+            "time": "Any"
+        },
+        {
+            "id": "sw-009",
+            "name": "Smelt",
+            "species": "Osmerus mordax",
+            "rank": 9,
+            "weight_range": {
+                "min": 0.05,
+                "max": 0.2
+            },
+            "region": "Coastal",
+            "time": "Night"
+        },
+        {
+            "id": "fw-010",
+            "name": "Golden Shiner",
+            "species": "Notemigonus crysoleucas",
+            "rank": 10,
+            "weight_range": {
+                "min": 0.15,
+                "max": 0.35
+            },
+            "region": "Freshwater",
+            "time": "Any"
+        },
+        {
+            "id": "sw-010",
+            "name": "Pinfish",
+            "species": "Lagodon rhomboides",
+            "rank": 10,
+            "weight_range": {
+                "min": 0.07,
+                "max": 0.3
+            },
+            "region": "Coastal",
+            "time": "Any"
+        }
+    ]
+}

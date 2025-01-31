@@ -1,0 +1,18 @@
+{
+  "fish": [
+    {
+      "id": "",
+      "name": "",
+      "species": "",
+      "rank": 0,
+      "weight_range": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "description": "",
+      "quip": "",
+      "region": "",
+      "time": ""
+    }
+  ]
+}
