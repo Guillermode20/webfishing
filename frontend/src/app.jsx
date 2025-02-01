@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'preact/hooks';
+import { useState, useEffect, useRef } from 'preact/hooks';
 import useWebSocket from './hooks/useWebSocket';
 import Chatbox from './components/Chatbox';
 import MessageInput from './components/MessageInput';
@@ -20,7 +20,7 @@ export function App() {
     submitAnswer 
   } = useWebSocket();
   
-  const [answer, setAnswer] = useState('');
+  const answerRef = useRef('');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isUserModalOpen, setIsUserModalOpen] = useState(false);
   const [isInventoryModalOpen, setIsInventoryModalOpen] = useState(false);
@@ -39,8 +39,8 @@ export function App() {
 
   const handleAnswerSubmit = (e) => {
     e.preventDefault();
-    submitAnswer(answer);
-    setAnswer('');
+    submitAnswer(answerRef.current);
+    answerRef.current = '';
   };
 
   const toggleDropdown = () => {
@@ -155,8 +155,8 @@ export function App() {
                   <form onSubmit={handleAnswerSubmit}>
                     <input
                       type="text"
-                      value={answer}
-                      onChange={(e) => setAnswer(e.target.value)}
+                      ref={answerRef}
+                      onChange={(e) => answerRef.current = e.target.value}
                       className="border p-2 rounded mr-2"
                       placeholder="Your answer..."
                     />

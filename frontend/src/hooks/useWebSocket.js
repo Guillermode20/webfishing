@@ -8,16 +8,19 @@ export default function useWebSocket() {
   const wsRef = useRef(null);
   const inputRef = useRef(null);
   const timerRef = useRef(null);
+  const hasActiveQuestion = useRef(false); // Track active question
 
   const handleMessage = useCallback((event) => {
     const data = JSON.parse(event.data);
-    
+
     switch (data.type) {
       case 'chat':
         setMessages((prevMessages) => [...prevMessages, data.message]);
         break;
-      
+
       case 'question':
+        if (hasActiveQuestion.current) break; // Prevent resetting if question already exists
+        hasActiveQuestion.current = true;
         setQuestion(data.data);
         setTimer(data.data.timeLimit);
         // Start countdown timer
@@ -26,17 +29,20 @@ export default function useWebSocket() {
           setTimer(prev => {
             if (prev <= 1) {
               clearInterval(timerRef.current);
-              setQuestion(null);
-              return null;
+              return 0;
             }
             return prev - 1;
           });
         }, 1000);
         break;
-      
+
       case 'answerResult':
         const message = data.data.isCorrect ? 'Correct! You caught a fish!' : 'Wrong answer! The fish got away!';
         setMessages(prev => [...prev, `[System]: ${message}`]);
+        // Clear question and timer states and reset active flag
+        setQuestion(null);
+        setTimer(null);
+        hasActiveQuestion.current = false;
         break;
     }
   }, []);
@@ -57,7 +63,7 @@ export default function useWebSocket() {
 
   const sendMessage = useCallback((type, payload) => {
     if (!wsRef.current || wsRef.current.readyState !== WebSocket.OPEN) return;
-    
+
     wsRef.current.send(JSON.stringify({ type, ...payload }));
   }, []);
 
@@ -77,17 +83,15 @@ export default function useWebSocket() {
 
   const submitAnswer = useCallback((answer) => {
     if (!question) return;
-    
+
     sendMessage('submitAnswer', {
       answer,
       correctAnswer: question.answer
     });
-    
+
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
-    setQuestion(null);
-    setTimer(null);
   }, [question, sendMessage]);
 
   useEffect(() => {

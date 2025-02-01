@@ -44,4 +44,4 @@ coverage/
 .qodo
 
 #database
-.db
+*.db
