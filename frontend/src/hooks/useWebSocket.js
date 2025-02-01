@@ -1,95 +1,112 @@
 import { useState, useEffect, useRef, useCallback } from 'preact/hooks';
 
 export default function useWebSocket() {
-    const [messages, setMessages] = useState([]);
-    const [input, setInput] = useState('');
-    const [question, setQuestion] = useState(null);
-    const [timer, setTimer] = useState(0);
-    const inputRef = useRef(null);
-    const wsRef = useRef(null);
-    const [isConnected, setIsConnected] = useState(false);
-    const reconnectAttempts = useRef(0);
-    const maxReconnectAttempts = 5;
-    const messageQueue = useRef([]);
-    const heartbeatInterval = useRef(null);
-    const [connectionState, setConnectionState] = useState('disconnected');
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState('');
+  const [question, setQuestion] = useState(null);
+  const [timer, setTimer] = useState(null);
+  const wsRef = useRef(null);
+  const inputRef = useRef(null);
+  const timerRef = useRef(null);
 
-    const sendMessage = useCallback((message) => {
-        if (wsRef.current?.readyState === WebSocket.OPEN) {
-            wsRef.current.send(JSON.stringify(message));
-        } else {
-            messageQueue.current.push(message);
-        }
-    }, []);
-
-    const connect = useCallback(() => {
-        if (wsRef.current?.readyState === WebSocket.OPEN) return;
-
-        setConnectionState('connecting');
-        const ws = new WebSocket('ws://your-server-url'); // Replace with your actual WebSocket URL
-
-        ws.onopen = () => {
-            console.log('Connected to WebSocket');
-            setIsConnected(true);
-            setConnectionState('connected');
-            reconnectAttempts.current = 0;
-
-            // Send queued messages
-            while (messageQueue.current.length > 0) {
-                const message = messageQueue.current.shift();
-                ws.send(JSON.stringify(message));
+  const handleMessage = useCallback((event) => {
+    const data = JSON.parse(event.data);
+    
+    switch (data.type) {
+      case 'chat':
+        setMessages((prevMessages) => [...prevMessages, data.message]);
+        break;
+      
+      case 'question':
+        setQuestion(data.data);
+        setTimer(data.data.timeLimit);
+        // Start countdown timer
+        if (timerRef.current) clearInterval(timerRef.current);
+        timerRef.current = setInterval(() => {
+          setTimer(prev => {
+            if (prev <= 1) {
+              clearInterval(timerRef.current);
+              setQuestion(null);
+              return null;
             }
+            return prev - 1;
+          });
+        }, 1000);
+        break;
+      
+      case 'answerResult':
+        const message = data.data.isCorrect ? 'Correct! You caught a fish!' : 'Wrong answer! The fish got away!';
+        setMessages(prev => [...prev, `[System]: ${message}`]);
+        break;
+    }
+  }, []);
 
-            // Setup heartbeat
-            heartbeatInterval.current = setInterval(() => {
-                if (ws.readyState === WebSocket.OPEN) {
-                    ws.send(JSON.stringify({ type: 'ping' }));
-                }
-            }, 25000);
-        };
+  useEffect(() => {
+    const socket = new WebSocket('ws://localhost:4000');
+    wsRef.current = socket;
 
-        ws.onclose = (event) => {
-            console.log('WebSocket disconnected', event);
-            setIsConnected(false);
-            setConnectionState('disconnected');
-            clearInterval(heartbeatInterval.current);
+    socket.onmessage = handleMessage;
+    socket.onerror = (error) => console.error('WebSocket error:', error);
 
-            // Attempt to reconnect if not exceeded max attempts
-            if (reconnectAttempts.current < maxReconnectAttempts) {
-                reconnectAttempts.current += 1;
-                setTimeout(connect, 1000 * Math.min(reconnectAttempts.current, 30));
-            }
-        };
-
-        ws.onerror = (error) => {
-            console.error('WebSocket error:', error);
-        };
-
-        ws.onmessage = (event) => {
-            const data = JSON.parse(event.data);
-            if (data.type === 'pong') return;
-            // ... existing message handling code ...
-        };
-
-        wsRef.current = ws;
-    }, []);
-
-    useEffect(() => {
-        connect();
-
-        return () => {
-            if (wsRef.current) {
-                clearInterval(heartbeatInterval.current);
-                wsRef.current.close();
-            }
-        };
-    }, [connect]);
-
-    // ... rest of your existing code ...
-
-    return {
-        // ...existing returns...
-        sendMessage,
-        connectionState,
+    return () => {
+      if (socket.readyState === WebSocket.OPEN) {
+        socket.close();
+      }
     };
+  }, [handleMessage]);
+
+  const sendMessage = useCallback((type, payload) => {
+    if (!wsRef.current || wsRef.current.readyState !== WebSocket.OPEN) return;
+    
+    wsRef.current.send(JSON.stringify({ type, ...payload }));
+  }, []);
+
+  const handleChatSubmit = useCallback((e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+    const trimmedInput = input.trim();
+    if (!trimmedInput) return;
+
+    sendMessage('chat', { message: trimmedInput });
+    setInput('');
+    inputRef.current.focus();
+  }, [input, sendMessage]);
+
+  const requestQuestion = useCallback(() => {
+    sendMessage('requestQuestion');
+  }, [sendMessage]);
+
+  const submitAnswer = useCallback((answer) => {
+    if (!question) return;
+    
+    sendMessage('submitAnswer', {
+      answer,
+      correctAnswer: question.answer
+    });
+    
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+    setQuestion(null);
+    setTimer(null);
+  }, [question, sendMessage]);
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
+  }, []);
+
+  return {
+    messages,
+    input,
+    setInput,
+    handleFormSubmit: handleChatSubmit,
+    inputRef,
+    question,
+    timer,
+    requestQuestion,
+    submitAnswer
+  };
 }

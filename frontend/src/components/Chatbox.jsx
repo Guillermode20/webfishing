@@ -1,4 +1,4 @@
-export default function Chatbox({ messages }) {
+export default function Chatbox({ messages = [] }) {
   return (
     <div className="w-full h-64 p-2 border rounded overflow-y-auto">
       {messages.map((msg, index) => {
