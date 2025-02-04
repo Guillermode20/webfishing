@@ -2,6 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes rgbShift {
+  0% { text-shadow: -1px 0 #ff000020, 1px 0 #00ff0020; }
+  50% { text-shadow: -1.5px 0 #ff000030, 1.5px 0 #00ff0030; }
+  100% { text-shadow: -1px 0 #ff000020, 1px 0 #00ff0020; }
+}
+
+@keyframes wobble {
+  0% { transform: skew(0deg, 0deg) scale(1); }
+  25% { transform: skew(1deg, 1deg) scale(1.01); }
+  75% { transform: skew(-1deg, -1deg) scale(0.99); }
+  100% { transform: skew(0deg, 0deg) scale(1); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.retro-text {
+  font-family: 'Press Start 2P', monospace;
+  animation: rgbShift 2s infinite;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.retro-bg {
+  background-size: cover !important;
+  background-position: center !important;
+  image-rendering: pixelated !important;
+  position: relative;
+}
+
+.ps1-window {
+  @apply relative bg-opacity-90 border-8;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #4a5568 0%, #2d3748 100%) 1;
+  image-rendering: pixelated;
+  box-shadow: 
+    0 0 0 2px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.crt-effect {
+  @apply relative overflow-hidden;
+}
+
+.retro-button {
+  @apply relative overflow-hidden transition-transform;
+  image-rendering: pixelated;
+  transform-style: preserve-3d;
+  transition: transform 0.1s;
+}
+
+.dither-bg {
+  background-image: 
+    linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.1) 75%);
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 0, 2px -2px, 0px 2px;
+}
 
 .message-meta {
   color: grey;

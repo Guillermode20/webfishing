@@ -2,11 +2,13 @@ import { h } from 'preact';
 
 export default function User() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl mb-4">User Account</h1>
-      <p className="mb-2">Name: John Doe</p>
-      <p className="mb-2">Email: john.doe@example.com</p>
-      <p className="mb-2">Member since: January 2023</p>
+    <div className="ps1-window bg-indigo-900 p-6 text-green-400 dither-bg">
+      <h1 className="retro-text text-2xl mb-6">USER DATA</h1>
+      <div className="space-y-4">
+        <p className="retro-text text-xs">NAME: JOHN DOE</p>
+        <p className="retro-text text-xs">EMAIL: JOHN.DOE@EXAMPLE.COM</p>
+        <p className="retro-text text-xs">MEMBER SINCE: 01/2023</p>
+      </div>
     </div>
   );
 }

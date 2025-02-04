@@ -2,11 +2,19 @@ import { h } from 'preact';
 
 export default function Inventory() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl mb-4">User Inventory</h1>
-      <p className="mb-2">Item 1: Fishing Rod</p>
-      <p className="mb-2">Item 2: Bait</p>
-      <p className="mb-2">Item 3: Tackle Box</p>
+    <div className="ps1-window bg-indigo-900 p-6 text-green-400 dither-bg">
+      <h1 className="retro-text text-2xl mb-6">INVENTORY</h1>
+      <div className="space-y-4">
+        <div className="bg-indigo-950 bg-opacity-50 p-4 border-2 border-green-400">
+          <p className="retro-text text-xs">ITEM_01: FISHING ROD</p>
+        </div>
+        <div className="bg-indigo-950 bg-opacity-50 p-4 border-2 border-green-400">
+          <p className="retro-text text-xs">ITEM_02: BAIT</p>
+        </div>
+        <div className="bg-indigo-950 bg-opacity-50 p-4 border-2 border-green-400">
+          <p className="retro-text text-xs">ITEM_03: TACKLE BOX</p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -38,10 +38,10 @@ export default function Auth({ onAuth }) {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50">
-            <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-md">
-                <h2 className="text-center text-3xl font-bold">
-                    {isLogin ? 'Login' : 'Register'}
+        <div className="min-h-screen bg-slate-900 flex items-center justify-center crt-effect retro-bg">
+            <div className="ps1-window bg-indigo-900 p-8 text-green-400 dither-bg w-full max-w-md">
+                <h2 className="retro-text text-2xl text-center mb-8">
+                    {isLogin ? 'LOGIN' : 'REGISTER'}
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
@@ -49,7 +49,7 @@ export default function Auth({ onAuth }) {
                             type="text"
                             placeholder="Username"
                             required
-                            className="w-full px-3 py-2 border rounded-md"
+                            className="w-full bg-indigo-950 text-green-400 retro-text text-xs p-4 border-4 border-green-400 focus:outline-none"
                             value={formData.username}
                             onChange={(e) => setFormData({...formData, username: e.target.value})}
                         />
@@ -60,7 +60,7 @@ export default function Auth({ onAuth }) {
                                 type="email"
                                 placeholder="Email"
                                 required
-                                className="w-full px-3 py-2 border rounded-md"
+                                className="w-full bg-indigo-950 text-green-400 retro-text text-xs p-4 border-4 border-green-400 focus:outline-none"
                                 value={formData.email}
                                 onChange={(e) => setFormData({...formData, email: e.target.value})}
                             />
@@ -71,21 +71,21 @@ export default function Auth({ onAuth }) {
                             type="password"
                             placeholder="Password"
                             required
-                            className="w-full px-3 py-2 border rounded-md"
+                            className="w-full bg-indigo-950 text-green-400 retro-text text-xs p-4 border-4 border-green-400 focus:outline-none"
                             value={formData.password}
                             onChange={(e) => setFormData({...formData, password: e.target.value})}
                         />
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+                        className="retro-button w-full bg-green-400 text-indigo-900 py-2 px-4"
                     >
-                        {isLogin ? 'Login' : 'Register'}
+                        {isLogin ? 'LOGIN' : 'REGISTER'}
                     </button>
                 </form>
                 <button
                     onClick={() => setIsLogin(!isLogin)}
-                    className="w-full text-blue-500 hover:text-blue-600"
+                    className="w-full text-green-400 hover:text-green-500"
                 >
                     {isLogin ? 'Need an account? Register' : 'Have an account? Login'}
                 </button>
