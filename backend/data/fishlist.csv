@@ -1,0 +1,84 @@
+name, binomial, region, habitat, size
+Killifish, Fundulus heteroclitus, North America, fw, xs
+Guppy, Poecilia reticulata, South America, fw, xs
+Zebrafish, Danio rerio, Asia, fw, xs
+Betta, Betta splendens, Asia, fw, xs
+Neon Tetra, Paracheirodon innesi, South America, fw, xs
+Green Chromis, Chromis viridis, Asia, sw, xs
+Ocellaris Clownfish, Amphiprion ocellaris, Asia, sw, xs
+Pencil Catfish, Trichomycterus, South America, fw, xs
+Cardinal Tetra, Paracheirodon axelrodi, South America, fw, xs
+Albino Cory, Corydoras aeneus, South America, fw, xs
+
+Bluegill, Lepomis macrochirus, North America, fw, s
+Goldfish, Carassius auratus, Asia, fw, s
+Molly, Poecilia sphenops, Central America, fw, s
+Platy, Xiphophorus maculatus, Central America, fw, s
+Angelfish, Pterophyllum, South America, fw, s
+Atlantic Herring, Clupea harengus, North America, sw, s
+Roach, Rutilus rutilus, Europe, fw, s
+Common Dab, Limanda limanda, Europe, sw, s
+Convict Cichlid, Amatitlania nigrofasciata, Central America, fw, s
+Yellow Tang, Zebrasoma flavescens, Asia, sw, s
+
+Rainbow Trout, Oncorhynchus mykiss, North America, fw, m
+Piranha, Pygocentrus nattereri, South America, fw, m
+Cichlid, Cichlidae, Central America, fw, m
+Siamese Algae Eater, Crossocheilus siamensis, Asia, fw, m
+Tench, Tinca tinca, Europe, fw, m
+Snook, Centropomus undecimalis, Central America, sw, m
+American Eel, Anguilla rostrata, North America, sw, m
+Clown Loach, Chromobotia macracanthus, Asia, fw, m
+Silver Dollar, Metynnis argenteus, South America, fw, m
+Jack Dempsey, Rocio octofasciata, Central America, fw, m
+
+Smallmouth Bass, Micropterus dolomieu, North America, fw, m
+European Chub, Squalius cephalus, Europe, fw, m
+Lionfish, Pterois, Asia, sw, m
+Yellowtail, Seriola quinqueradiata, Asia, sw, m
+Emperor Angelfish, Pomacanthus imperator, Asia, sw, m
+Regal Angelfish, Pygoplites diacanthus, Asia, sw, m
+Sea Lamprey, Petromyzon marinus, North America, sw, m
+Flounder, Paralichthys, North America, sw, m
+Discus, Symphysodon, South America, fw, m
+Queen Angelfish, Holacanthus ciliaris, Central America, sw, m
+
+Carp, Cyprinus carpio, Europe, fw, l
+Largemouth Bass, Micropterus salmoides, North America, fw, l
+Oscar, Astronotus ocellatus, South America, fw, l
+Mahimahi, Coryphaena hippurus, Central America, sw, l
+Atlantic Salmon, Salmo salar, North America, sw, l
+Giant Gourami, Osphronemus goramy, Asia, fw, l
+Redtail Catfish, Phractocephalus hemioliopterus, South America, fw, l
+European Seabass, Dicentrarchus labrax, Europe, sw, l
+Atlantic Cod, Gadus morhua, North America, sw, l
+Wahoo, Acanthocybium solandri, Central America, sw, l
+
+Blacktip Reef Shark, Carcharhinus melanopterus, Asia, sw, l
+Red Drum, Sciaenops ocellatus, North America, sw, l
+Sailfish, Istiophorus platypterus, Central America, sw, l
+Barracuda, Sphyraena barracuda, Central America, sw, l
+Stripped Bass, Morone saxatilis, North America, sw, l
+Sockeye Salmon, Oncorhynchus nerka, North America, sw, l
+Pleco, Hypostomus plecostomus, South America, fw, l
+Arapaima, Arapaima gigas, South America, fw, l
+Greenland Shark, Somniosus microcephalus, North America/Europe, sw, xl
+Great White Shark, Carcharodon carcharias, Global, sw, xl
+
+Tiger Shark, Galeocerdo cuvier, Global, sw, xl
+Hammerhead Shark, Sphyrna, Global, sw, xl
+Humpback Whale, Megaptera novaeangliae, Global, sw, xl
+Orca, Orcinus orca, Global, sw, xl
+Manta Ray, Manta birostris, Global, sw, xl
+Bowhead Whale, Balaena mysticetus, North America/Asia, sw, xxl
+Longfin Mako, Isurus paucus, Global, sw, xl
+Whale Shark, Rhincodon typus, Global, sw, xxl
+Blue Whale, Balaenoptera musculus, Global, sw, xxl
+Fin Whale, Balaenoptera physalus, Global, sw, xxl
+
+Sperm Whale, Physeter macrocephalus, Global, sw, xxl
+North Atlantic Right Whale, Eubalaena glacialis, North America, sw, xxl
+Sei Whale, Balaenoptera borealis, Global, sw, xxl
+Gray Whale, Eschrichtius robustus, North America/Asia, sw, xxl
+Cachalot Whale, Physeter macrocephalus, Global, sw, xxl
+Ocean sunfish, Mola mola, Global, sw, xl

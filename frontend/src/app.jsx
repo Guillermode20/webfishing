@@ -72,46 +72,31 @@ export function App() {
   return (
     <>
       <div className="min-h-screen bg-slate-900 crt-effect retro-bg">
-        <header className="ps1-window bg-indigo-900 text-green-400 p-4 flex justify-between items-center">
-          <h1 className="retro-text text-2xl">Webfishing Chat</h1>
+        <header className="header-container ps1-window bg-indigo-900 text-green-400 p-4 flex justify-between items-center">
+          <h1 className="retro-text text-2xl">WEBFISHING</h1>
           <div className="relative">
             <button 
               onClick={toggleDropdown}
-              className="retro-button bg-green-400 text-indigo-900 px-4 py-2"
+              className="retro-button bg-green-400 text-indigo-900"
             >
-              Menu
+              MENU
             </button>
             {isDropdownOpen && (
-              <div className="ps1-window absolute right-0 mt-2 w-48 bg-indigo-900 border-green-400">
-                <button 
-                  onClick={openUserModal}
-                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  User
-                </button>
-                <button 
-                  onClick={openInventoryModal}
-                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  Inventory
-                </button>
-                <button 
-                  onClick={handleLogout}
-                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  Logout
-                </button>
+              <div className="dropdown-menu">
+                <button onClick={openUserModal} className="dropdown-item">USER</button>
+                <button onClick={openInventoryModal} className="dropdown-item">INVENTORY</button>
+                <button onClick={handleLogout} className="dropdown-item">LOGOUT</button>
               </div>
             )}
           </div>
         </header>
 
         {isUserModalOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <div className="w-11/12 max-w-2xl">
+          <div className="modal-overlay">
+            <div className="modal-content">
               <button 
                 onClick={closeUserModal}
-                className="retro-button absolute top-4 right-4 bg-red-500 text-white px-4 py-2"
+                className="retro-button absolute -top-12 right-0 bg-red-500 text-white"
               >
                 CLOSE
               </button>
@@ -121,11 +106,11 @@ export function App() {
         )}
 
         {isInventoryModalOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <div className="w-11/12 max-w-2xl">
+          <div className="modal-overlay">
+            <div className="modal-content">
               <button 
                 onClick={closeInventoryModal}
-                className="retro-button absolute top-4 right-4 bg-red-500 text-white px-4 py-2"
+                className="retro-button absolute -top-12 right-0 bg-red-500 text-white"
               >
                 CLOSE
               </button>
@@ -150,33 +135,36 @@ export function App() {
             </div>
             <div className="w-1/2">
               <div className="ps1-window bg-indigo-900 p-6 text-green-400 dither-bg">
-                <h2 className="retro-text text-xl mb-4">Fishing</h2>
+                <h2 className="retro-text text-2xl mb-4">Fishing</h2>
                 <div className="flex flex-col items-center justify-between h-[400px]">
                   {question ? (
-                    <div className="text-center">
-                      <p className="text-lg mb-4">{question.question}</p>
-                      <p className="text-sm mb-4">Time remaining: {timer}s</p>
-                      <form onSubmit={handleAnswerSubmit}>
+                    <div className="text-center w-full">
+                      <p className="retro-text text-base mb-6">{question.question}</p>
+                      <p className="retro-text text-sm mb-6">TIME REMAINING: {timer}s</p>
+                      <form onSubmit={handleAnswerSubmit} className="space-y-4">
                         <input
                           type="text"
                           ref={answerRef}
                           onChange={(e) => answerRef.current = e.target.value}
-                          className="border p-2 rounded mr-2"
-                          placeholder="Your answer..."
+                          className="retro-input w-full mb-4"
+                          placeholder="YOUR ANSWER..."
                         />
-                        <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
-                          Submit
+                        <button 
+                          type="submit" 
+                          className="retro-button bg-green-400 text-indigo-900 w-full"
+                        >
+                          SUBMIT
                         </button>
                       </form>
                     </div>
                   ) : (
                     <>
-                      <p className="text-lg">Click button to Fish!</p>
+                      <p className="retro-text text-base">READY TO FISH?</p>
                       <button 
                         onClick={requestQuestion}
-                        className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600"
+                        className="retro-button bg-green-400 text-indigo-900"
                       >
-                        Cast Line
+                        CAST LINE
                       </button>
                     </>
                   )}

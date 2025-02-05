@@ -29,8 +29,8 @@
 .retro-text {
   font-family: 'Press Start 2P', monospace;
   animation: rgbShift 2s infinite;
-  letter-spacing: 1px;
-  line-height: 1.5;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
 }
 
 .retro-bg {
@@ -55,10 +55,41 @@
 }
 
 .retro-button {
-  @apply relative overflow-hidden transition-transform;
+  font-family: 'Press Start 2P', monospace;
+  @apply relative overflow-hidden transition-all duration-100 px-6 py-3 text-sm font-bold;
   image-rendering: pixelated;
   transform-style: preserve-3d;
-  transition: transform 0.1s;
+}
+
+.retro-button:hover {
+  @apply transform scale-105 brightness-110;
+}
+
+.retro-button:active {
+  @apply transform scale-95;
+}
+
+.retro-input {
+  @apply w-full bg-indigo-950 text-green-400 retro-text text-sm p-4 border-4 border-green-400 focus:outline-none focus:border-green-300 transition-colors duration-200;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center backdrop-blur-sm z-50;
+  z-index: 1000;
+}
+
+.modal-content {
+  @apply w-11/12 max-w-2xl relative;
+  z-index: 1001;
+}
+
+.dropdown-menu {
+  @apply ps1-window absolute right-0 mt-2 w-48 bg-indigo-900 border-green-400 overflow-hidden z-50;
+  z-index: 100;
+}
+
+.dropdown-item {
+  @apply block w-full text-left px-4 py-3 text-green-400 hover:bg-indigo-800 transition-colors duration-150 retro-text text-sm;
 }
 
 .dither-bg {
@@ -73,4 +104,9 @@
 
 .message-meta {
   color: grey;
+}
+
+.header-container {
+  @apply sticky top-0;
+  z-index: 50;
 }
